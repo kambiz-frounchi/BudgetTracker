@@ -1,63 +1,15 @@
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
+# Budget Tracker
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+## Description
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+This is a simple web app that lets the user track their deposits and expenses. The user simply adds the data to the app. The app then keeps a history of the user transactions in the backend DB, shows the user their history of transactions and charts the total funds over time, in addition to showing the current total funds.
 
-Offline Functionality:
+This app will work when the user is offline by letting the user add deposits and expenses. The backend DB will get updated once the user is online again such that when the user accesses the app at some later time, it will get all the latest transactions from the backend.
 
-  * Enter deposits offline
+In terms of implementation, IndexedDB is used to store pending transactions when the user is offline. When the user goes back online, the IndexedDb is read in order to update the backend and then cleared.
 
-  * Enter expenses offline
+![BudgetTracker](./Assets/BudgetTracker.jpg)
 
-When brought back online:
+## Instructions
 
-  * Offline entries should be added to tracker.
-
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
-
-## Business Context
-
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
-
-
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
-
-- - -
-
-## Commit Early and Often
-
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
-
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-* Follow these guidelines for committing:
-
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-  * Test your application before you commit to ensure functionality at every step in the development process
-
-* We would like you to have well over 200 commits by graduation, so commit early and often!
-
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Important/MongoAtlas-Deploy.md)
-
-## Submission on BCS
-
-* You are required to submit the following:
-
-  * the URL to the deployed application
-
-  * the URL to the Github repository
-
+The app is deployed using heroku [here](https://nameless-depths-55689.herokuapp.com/). Simply navigate to the URL!
