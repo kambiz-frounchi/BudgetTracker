@@ -12,4 +12,4 @@ In terms of implementation, IndexedDB is used to store pending transactions when
 
 ## Instructions
 
-The app is deployed using heroku [here](https://nameless-depths-55689.herokuapp.com/). Simply navigate to the URL!
+The app is deployed using heroku [here](https://frozen-crag-53405.herokuapp.com/). Simply navigate to the URL!
